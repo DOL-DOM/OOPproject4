@@ -4,7 +4,6 @@
 <h5> Our topic is to create a parking lot management system through car plate recognition. We work with Python, using the openCV library.
 <br> It will be helpful if you already know about image processing.</h5>
 
-<hr>
 
 1. you need to install openCV, pytesseract library and just connect with our code
 (just follow your compiler and google says 🤞)

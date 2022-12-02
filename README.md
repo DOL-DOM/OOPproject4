@@ -1,5 +1,5 @@
-<h1>  &lt;strong&gt;OOPproject4 &lt;/strong&gt;</h1>
-This is for OOP class, project4
+<h1>  OOPproject4 </h1>
+&lt;strong&gt;This is for OOP class, project4 &lt;/strong&gt;
 
 <h5> Our topic is to create a parking lot management system through license plate recognition. Work with Python, use the openCV library. </h5>
 
@@ -14,6 +14,8 @@ This is for OOP class, project4
 ![image](https://user-images.githubusercontent.com/102032766/204998731-b5ab185a-a316-49bf-8cbf-1ecd8fade004.png)
 
 5. <h3> Problem1.</h3>
+
 ![image](https://user-images.githubusercontent.com/102032766/205343818-432b2639-eda7-44a1-b452-975ce3d7fcb2.png)
 
-some image can't be read well, so we need to make exepction case... (like at first, it starts 2 numbers and next 1 한글 and next, 4 numbers.. we give it some rules)
+can you see the image's name? Some name is not correct.
+At now, some image can't be read well, so we need to make exepction case... (like at first, it starts 2 numbers and next 1 한글 and next, 4 numbers.. we give it some rules)

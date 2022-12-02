@@ -1,7 +1,8 @@
 <h1>  OOPproject4 </h1>
 <strong> This is for OOP class, project4 </strong>
 
-<h5> Our topic is to create a parking lot management system through license plate recognition. Work with Python, use the openCV library. </h5>
+<h5> Our topic is to create a parking lot management system through license plate recognition. Work with Python, use the openCV library.
+It will be helpful if you already know about image processing.</h5>
 
 1. you need to install openCV, pytesseract library and just connect with our code
 

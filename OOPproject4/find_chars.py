@@ -9,7 +9,7 @@ MAX_WIDTH_DIFF = 0.8 # 너비 차이
 MAX_HEIGHT_DIFF = 0.2 # 높이 차이
 MIN_N_MATCHED = 3 # 3 # 위에 조건들이 3개이상 충족해야 번호판이다
 
-def find_chars(contour_list, possible_contours):
+def find_chars(contour_list):
     matched_result_idx = []
     
     
@@ -58,7 +58,7 @@ def find_chars(contour_list, possible_contours):
             if d4['idx'] not in matched_contours_idx:
                 unmatched_contour_idx.append(d4['idx'])
 
-        unmatched_contour = np.take(possible_contours, unmatched_contour_idx)
+        unmatched_contour = np.take(contour_list, unmatched_contour_idx)  
         
         # recursive
         recursive_contour_list = find_chars(unmatched_contour)
@@ -69,4 +69,3 @@ def find_chars(contour_list, possible_contours):
         break
 
     return matched_result_idx
-

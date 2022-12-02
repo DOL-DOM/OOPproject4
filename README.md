@@ -8,24 +8,22 @@
 
 1. you need to install openCV, pytesseract library and just connect with our code
 (just follow your compiler and google says 🤞)
-
+<br>
 2. we're working on it, maybe many things will be changed... please do not start yet !!! 😂😂
-
-3. Please refer to the Korean explanation here
-(https://velog.io/@mactto3487/%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-OpenCV-%EC%9E%90%EB%8F%99%EC%B0%A8-%EB%B2%88%ED%98%B8%ED%8C%90-%EC%9D%B8%EC%8B%9D) 
-Or you can visit the official docs for openCV https://docs.opencv.org/4.x/index.html 
-
-4. you can change this path to on your own! (if you need)
+<br>
+3. You can visit the official docs for openCV https://docs.opencv.org/4.x/index.html 
+<br>
+4. you can change this path to on your own! (if you need) <br><br>
 ![image](https://user-images.githubusercontent.com/102032766/204998731-b5ab185a-a316-49bf-8cbf-1ecd8fade004.png)
 
-
+<br><br>
 <hr>
-
+<br><br>
 
 
  <h2> Problem1.</h2>
 
 ![image](https://user-images.githubusercontent.com/102032766/205343818-432b2639-eda7-44a1-b452-975ce3d7fcb2.png)
-
-Can you see the image's name? Some name are not correct.
-At now, some image can't be read well, so we need to make exepction case... (like at first, it starts 2 numbers and next 1 한글 and next, 4 numbers.. we give it some rules)
+<br>
+Can you see the image's name? <br> Some name are not correct. <br>
+At now, some image can't be read well, so we need to make exepction case... <br> (like at first, it starts 2 numbers and next 1 한글 and next, 4 numbers.. we give it some rules)

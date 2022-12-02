@@ -1,5 +1,5 @@
 <h1>  OOPproject4 </h1>
-&lt;strong&gt;This is for OOP class, project4 &lt;/strong&gt;
+<strong> This is for OOP class, project4 </strong>
 
 <h5> Our topic is to create a parking lot management system through license plate recognition. Work with Python, use the openCV library. </h5>
 

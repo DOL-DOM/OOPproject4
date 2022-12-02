@@ -7,6 +7,7 @@
 <hr>
 
 1. you need to install openCV, pytesseract library and just connect with our code
+(just follow your compiler and google says 🤞)
 
 2. we're working on it, maybe many things will be changed... please do not start yet !!! 😂😂
 
@@ -26,5 +27,5 @@ Or you can visit the official docs for openCV https://docs.opencv.org/4.x/index.
 
 ![image](https://user-images.githubusercontent.com/102032766/205343818-432b2639-eda7-44a1-b452-975ce3d7fcb2.png)
 
-can you see the image's name? Some name is not correct.
+Can you see the image's name? Some name are not correct.
 At now, some image can't be read well, so we need to make exepction case... (like at first, it starts 2 numbers and next 1 한글 and next, 4 numbers.. we give it some rules)

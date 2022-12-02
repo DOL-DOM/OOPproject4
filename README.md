@@ -3,16 +3,15 @@
 
 <h5> Our topic is to create a parking lot management system through car plate recognition. We work with Python, using the openCV library.
 <br> It will be helpful if you already know about image processing.</h5>
-
-
+<hr>
 1. you need to install openCV, pytesseract library and just connect with our code
 (just follow your compiler and google says 🤞)
-<br>
+
 2. we're working on it, maybe many things will be changed... please do not start yet !!! 😂😂
-<br>
+
 3. You can visit the official docs for openCV https://docs.opencv.org/4.x/index.html 
-<br>
-4. you can change this path to on your own! (if you need) <br><br>
+
+4. you can change this path to on your own! (if you need)
 ![image](https://user-images.githubusercontent.com/102032766/204998731-b5ab185a-a316-49bf-8cbf-1ecd8fade004.png)
 
 <br><br>

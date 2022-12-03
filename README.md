@@ -20,7 +20,7 @@
 
 to execute program:
 1. download cv2, matplotlib, pytesseract, pillow(perhaps there is more.. plz read error message)
-2. 'orgpath' in oopproject4.py : directory where py files & car images are(has to be in same directory)
+2. 'path' in oopproject4.py : directory where py files & car images are(has to be in same directory)
 3. in line 'pytesseract.pytesseract.tesseract_cmd =' in findcarinfo.py you should enter your tesseract file path
 4. you should download trainded data from here: https://github.com/tesseract-ocr/tessdata/blob/main/kor.traineddata
     move this trained data file to tessdata directory in tesseract directory

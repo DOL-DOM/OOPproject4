@@ -26,6 +26,10 @@ to execute program:
     move this trained data file to tessdata directory in tesseract directory
 5. image result in 'res' directory under orgpath
 
+<br><br>
+<hr>
+<br><br>
+
  <h2> Problem1.</h2>
 
 ![image](https://user-images.githubusercontent.com/102032766/205343818-432b2639-eda7-44a1-b452-975ce3d7fcb2.png)

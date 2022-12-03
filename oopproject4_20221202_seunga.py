@@ -165,7 +165,7 @@ def findcarinfo(image_name):
             # 육관선 개수가 3보다 작을때는 continue를 통해 제외
             if len(matched_contours_idx) < MIN_N_MATCHED:
                 continue
-            # 최종 호부군에 넣어주기
+            # 최종 후보군에 넣어주기
             matched_result_idx.append(matched_contours_idx)
             # 아닌 것들을 다시 한번 비교하고 넣어준다.
             unmatched_contour_idx = []

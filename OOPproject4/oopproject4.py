@@ -35,7 +35,7 @@ carlist=[]
     
 
 #path:이미지 들어있는 경로    
-path = 'D:/2학년 2학기/객지프/프로젝트4'
+path = 'C:/Users/eric7/Desktop/수업/OOPproject4/OOPproject4'
 img_list=[]
 possible_img_extension = ['.jpg','.jpeg','.JPG','.bmp','.png', '.PNG']
 for(root,dirs,files) in os.walk(path):

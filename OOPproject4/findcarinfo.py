@@ -2,11 +2,15 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import pytesseract
+from openpyxl import Workbook
+from openpyxl import load_workbook
 import os
 from find_chars import *
 from isHangeul import *
 
 #function that helps makes car object from picture
+wb = load_workbook("car_info.xlsx")
+ws = wb["car_info"]
 
 def findcarinfo(image_name):
 
@@ -268,8 +272,14 @@ def findcarinfo(image_name):
 ###9th image, final###
 
 #번호판 정보를 텍스트로 콘솔에 출력
+
     if correct > 5:
         print(chars)
+        exal_number = 0
+        for row in ws.rows:
+            exal_number += 1
+        ws.cell(row=exal_number+1, column=1, value=chars)
+
     else :
         print('다시 인식해주세요.')
 
@@ -294,4 +304,6 @@ def findcarinfo(image_name):
 
     #객체 생성 위한 변수값 return
     #car = Car(car_date, car_time, car_number)
+    wb.save('car_info.xlsx')
+    wb.close()
     return car_date, car_time, car_number

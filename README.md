@@ -24,7 +24,7 @@ to execute program:
 3. in line 'pytesseract.pytesseract.tesseract_cmd =' in findcarinfo.py you should enter your tesseract file path
 4. you should download trainded data from here: https://github.com/tesseract-ocr/tessdata/blob/main/kor.traineddata
     move this trained data file to tessdata directory in tesseract directory
-5. the image file name format should be 0000-00-00 00;00;00 to correctly read the date and time info; there are examples on the git
+5. the image file name format should be 0000-00-00 00;00;00 to correctly read the date and time info; there are examples on 
 6. image result in 'res' directory under path
 
 <br><br>

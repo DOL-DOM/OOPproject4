@@ -1,12 +1,19 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import openpyxl
 import pytesseract
 import os
+from datetime import datetime
 from find_chars import *
 from isHangeul import *
 
 #function that helps makes car object from picture
+wb = openpyxl.load_workbook('car_info.xlsx')
+w2 = wb['car_info']
+w3 = wb['car_owner']
+
+now = datetime.now()
 
 def findcarinfo(image_name):
 
@@ -268,8 +275,20 @@ def findcarinfo(image_name):
 ###9th image, final###
 
 #번호판 정보를 텍스트로 콘솔에 출력
+
     if correct > 5:
         print(chars)
+        row_count = wb["car_info"].max_row
+        w2.cell(row=row_count + 1, column=1).value = str(now.strftime('%Y-%m-%d %H:%M:%S'))
+        w2.cell(row=row_count + 1, column=2).value = chars
+
+        row_count1 = wb["car_owner"].max_row
+        for kk in range(2,row_count1+1):
+            if chars == w3.cell(kk,2).value:
+                w2.cell(row=row_count + 1, column=3).value = w3.cell(kk,4).value
+                w2.cell(row=row_count + 1, column=4).value = w3.cell(kk, 5).value
+                w2.cell(row=row_count + 1, column=5).value = w3.cell(kk, 6).value
+
     else :
         print('다시 인식해주세요.')
 
@@ -294,4 +313,6 @@ def findcarinfo(image_name):
 
     #객체 생성 위한 변수값 return
     #car = Car(car_date, car_time, car_number)
+    wb.save('car_info.xlsx')
+    wb.close()
     return car_date, car_time, car_number

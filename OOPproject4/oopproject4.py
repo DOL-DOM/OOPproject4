@@ -37,12 +37,8 @@ carlist=[]
     
 
 #path:이미지 들어있는 경로    
-<<<<<<< HEAD
 #path = 'D:/2학년 2학기/객지프/프로젝트4'
-path = 'C:/Users/newid/Downloads/OOP_proj4/OOPproject4'
-=======
-path = 'C:/Users/danie/OneDrive/Desktop/OOP4 MY FINAL PART/OOPproject4/OOPproject4'
->>>>>>> origin/Daniel
+path = 'C:/Users/newid/OneDrive/바탕 화면/workspace/python/OOP_proj4/OOPproject4'
 img_list=[]
 possible_img_extension = ['.jpg','.jpeg','.JPG','.bmp','.png', '.PNG']
 for(root,dirs,files) in os.walk(path):
@@ -134,9 +130,14 @@ def find_info_by_date(date, path):
     return cars_result
 
 
-find_owner_info_by_number('65노0887', './car_info.xlsx')
-find_info_by_datetime('2022-12-05 21:46:43', './car_info.xlsx')
-find_info_by_date('2022-12-05', './car_info.xlsx')
-find_info_by_time('21:46:43', 'car_info.xlsx')
+# find_owner_info_by_number('65노0887', './car_info.xlsx')
+# find_info_by_datetime('2022-12-05 21:46:43', './car_info.xlsx')
+# find_info_by_date('2022-12-05', './car_info.xlsx')
+# find_info_by_time('21:46:43', 'car_info.xlsx')
+
+find_owner_info_by_number(any, './car_info.xlsx')
+find_info_by_datetime(any, './car_info.xlsx')
+find_info_by_date(any, './car_info.xlsx')
+find_info_by_time(any, 'car_info.xlsx')
 
 #print(carlist[2].getcardate())

@@ -140,7 +140,6 @@ def findcarinfo(image_name):
 
     plt.figure(figsize=(12, 10))
     plt.imshow(temp_result, cmap='gray')
-    #현재까지 후보는 temp_result임
 
     PLATE_WIDTH_PADDING = 1.3 # 1.3
     PLATE_HEIGHT_PADDING = 1.5 # 1.5
@@ -228,7 +227,6 @@ def findcarinfo(image_name):
                     plate_max_y = y + h
                     
         img_result = plate_img[plate_min_y:plate_max_y, plate_min_x:plate_max_x]
-         #왜곡 보정 후 가져온 이미지의 후보는  img_result
         
         ###9th image, Using tesseract  ###      
         img_result = cv2.GaussianBlur(img_result, ksize=(3, 3), sigmaX=0)
@@ -237,16 +235,10 @@ def findcarinfo(image_name):
         
         pytesseract.pytesseract.tesseract_cmd = 'C:\Program Files\Tesseract-OCR/tesseract.exe'
         chars = pytesseract.image_to_string(img_result, lang='kor', config='--psm 7 --oem 0')
-        #chars에 일단 다 때려 박음
         
         result_chars = ''
         num_digit = 0
         num_hangeul = 0
-        
-        # [ 번호판의 조건 ]
-        # 1. 숫자가 6개 또는 7개
-        # 2. 한글은 1개
-        # 3. 한글은 인덱스[2], [3]
         
          # 1. 숫자나 한글로만 범위를 한정
         for c in chars:
@@ -259,8 +251,6 @@ def findcarinfo(image_name):
                 
         
         plate_chars.append(result_chars)
-        # plate_chars 에는 후보인 번호판애들이 다 들어감!!!
-        # result_chars 에는 번호판 하나씩 가지고 있음 (반복문 속 변수)
         #print(plate_chars)
 
         if num_digit and len(result_chars) > longest_text:
@@ -273,6 +263,11 @@ def findcarinfo(image_name):
     chars = plate_chars[longest_idx]
 
     # 2. chars 에서 다시 검사 
+        
+        # [ 번호판의 조건 ]
+        # 1. 숫자가 6개 또는 7개
+        # 2. 한글은 1개
+        # 3. 한글은 인덱스[2], [3]
 
     ###9th image, final###
 

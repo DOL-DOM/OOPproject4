@@ -8,6 +8,8 @@ from datetime import datetime
 from find_chars import *
 from isHangeul import *
 
+plt.rc('figure', max_open_warning = 0)
+
 #function that helps makes car object from picture
 wb = openpyxl.load_workbook('car_info.xlsx')
 w2 = wb['car_info']

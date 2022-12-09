@@ -89,7 +89,6 @@ def find_info_by_datetime(datetime, path):
     print(tabulate(df, headers='keys', tablefmt='psql'))
     return cars_result
 
-
 def find_info_by_time(time, path):
     wb = openpyxl.load_workbook(path)
     ws1 = wb['car_info']
@@ -108,7 +107,6 @@ def find_info_by_time(time, path):
     print(f'INFO BY TIME {time}')
     print(tabulate(df, headers='keys', tablefmt='psql'))
     return cars_result
-
 
 def find_info_by_date(date, path):
     wb = openpyxl.load_workbook(path)
@@ -135,9 +133,30 @@ def find_info_by_date(date, path):
 # find_info_by_date('2022-12-05', './car_info.xlsx')
 # find_info_by_time('21:46:43', 'car_info.xlsx')
 
-find_owner_info_by_number(any, './car_info.xlsx')
-find_info_by_datetime(any, './car_info.xlsx')
-find_info_by_date(any, './car_info.xlsx')
-find_info_by_time(any, 'car_info.xlsx')
+prompt = """1. Find owner info by car number
+2. Find info by datetime
+3. Find info by date
+4. Find info by time
+5. Exit"""
+
+while True:
+    os.system('cls')
+    print (prompt)
+    index = int(input("Enter number : "))
+    if(index == 1):
+        find = input("Enter car number : ")
+        find_owner_info_by_number(find, './car_info.xlsx')
+    elif(index == 2):
+        find = input("Enter datetime : ")
+        find_info_by_datetime(find, './car_info.xlsx')
+    elif(index == 3):
+        find = input("Enter date : ")
+        find_info_by_date(find, './car_info.xlsx')
+    elif(index == 4):
+        find = input("Enter time : ")
+        find_info_by_time(find, './car_info.xlsx')
+    else:
+        break
+    input("Press enter to continue ")
 
 #print(carlist[2].getcardate())
